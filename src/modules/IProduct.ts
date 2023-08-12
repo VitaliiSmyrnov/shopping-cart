@@ -6,3 +6,9 @@ export type Product = {
   image: string;
   quantity: number;
 };
+
+export interface CartProps {
+  [productId: string]: Product;
+}
+
+export type Operation = "increase" | "decrease";
