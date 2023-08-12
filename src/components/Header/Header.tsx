@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import useLocalStorageState from "use-local-storage-state";
 
 import { CartWidget } from "src/components/CartWidget";
-import { CartProps } from "src/components/Products/Products.tsx";
+
+import { CartProps } from "src/modules/IProduct";
 
 import css from "./Header.module.scss";
 

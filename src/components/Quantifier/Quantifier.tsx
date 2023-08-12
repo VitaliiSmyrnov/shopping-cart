@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import css from "./Quantifier.module.scss";
 
-type Operation = "increase" | "decrease";
+import { Operation } from "src/modules/IProduct";
 
 interface IProps {
   remove: (productId: number) => void;

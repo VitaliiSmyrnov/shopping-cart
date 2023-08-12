@@ -7,11 +7,7 @@ import { CurrencyFormatter } from "src/components/CurrencyFormatter";
 
 import css from "./Products.module.scss";
 
-import { Product } from "src/modules/IProduct";
-
-export interface CartProps {
-  [productId: string]: Product;
-}
+import { Product, CartProps } from "src/modules/IProduct";
 
 export const Products: React.FC = () => {
   const [status, setStatus] = useState("idle");
