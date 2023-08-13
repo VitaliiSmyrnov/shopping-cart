@@ -25,6 +25,7 @@
     transform: scaleX(-1);
 
     &:hover {
+      cursor: pointer;
       filter: drop-shadow(0 0 2em #646cffaa);
     }
   }

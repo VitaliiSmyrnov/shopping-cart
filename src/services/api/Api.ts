@@ -1,18 +1,16 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 
 import { Product } from "src/modules/IProduct";
 
 axios.defaults.baseURL = "https://dummyjson.com/products";
 
-// export const fetchData = async (): Promise<Product[]> => {
-//   const response: AxiosResponse<{ products: Product[] }> = await axios.get("");
-//   return response.data.products;
-// };
-interface IItem {
-  products: Product;
+interface ApiResponse {
+  data: {
+    products: Product[];
+  };
 }
 
-export const fetchData = async () => {
-  const res = await axios.get<IItem>("");
-  return res.data.products;
+export const fetchData = async (): Promise<ApiResponse> => {
+  const response: AxiosResponse<ApiResponse> = await axios.get("");
+  return response.data.products;
 };
