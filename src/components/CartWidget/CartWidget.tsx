@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import shoppingCart from "src/assets/svg/shopping-cart.svg";
+import shoppingCart from "/shopping-cart.svg";
 
 import css from "./CartWidget.module.scss";
 

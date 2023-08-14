@@ -10,7 +10,8 @@ interface ApiResponse {
   };
 }
 
-export const fetchData = async (): Promise<ApiResponse> => {
+export const fetchData = async (): Promise<Product[]> => {
   const response: AxiosResponse<ApiResponse> = await axios.get("");
+
   return response.data.products;
 };
