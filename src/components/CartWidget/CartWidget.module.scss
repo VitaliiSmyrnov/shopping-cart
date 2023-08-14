@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: row-reverse;
   justify-content: space-between;
+  gap: 10px;
 
   background: none;
 
@@ -19,7 +20,6 @@
   .shoppingCart {
     height: 3em;
     padding: 1.5rem 0.4rem;
-    fill: white;
     width: 48px;
 
     will-change: filter;
