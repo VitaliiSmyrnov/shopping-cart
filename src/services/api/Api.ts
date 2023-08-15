@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 
 import { Product } from "src/modules/IProduct";
 
@@ -11,7 +11,7 @@ interface ApiResponse {
 }
 
 export const fetchData = async (): Promise<Product[]> => {
-  const response: AxiosResponse<ApiResponse> = await axios.get("");
+  const response: ApiResponse = await axios.get("");
 
   return response.data.products;
 };
