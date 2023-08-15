@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 
   background: none;
@@ -19,8 +19,9 @@
 
   .shoppingCart {
     height: 3em;
-    padding: 1.5rem 0.4rem;
-    width: 48px;
+    // padding: 1.5rem 0.4rem;
+    width: 36px;
+    height: 36px;
 
     will-change: filter;
     transition: filter 300ms;
@@ -30,6 +31,7 @@
     font-size: 2em;
     top: 38px;
     color: orange;
+    line-height: 1;
 
     z-index: 1;
   }
